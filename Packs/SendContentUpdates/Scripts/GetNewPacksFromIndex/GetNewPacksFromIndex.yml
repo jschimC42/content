@@ -1,0 +1,22 @@
+args:
+- description: The entry ID of the index.zip
+  name: entry_id
+  required: true
+- description: The last time the message was sent. Typically one week ago.
+  name: last_message_time_str
+  required: true
+comment: Extract the index and gets a list of all new packs since last run into context.
+commonfields:
+  id: GetNewPacksFromIndex
+  version: -1
+dockerimage: demisto/unzip:1.0.0.12410
+enabled: true
+name: GetNewPacksFromIndex
+pswd: ""
+runas: DBotWeakRole
+runonce: false
+script: ''
+scripttarget: 0
+subtype: python3
+tags: []
+type: python
